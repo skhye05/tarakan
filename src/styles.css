@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: "Bebas Bold";
+  src: url(assets/fonts/bebas_neue/TTF/BebasNeueBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Bebas Light";
+  src: url(assets/fonts/bebas_neue/TTF/BebasNeueLight.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Bebas Regular";
+  src: url(assets/fonts/bebas_neue/TTF/BebasNeueRegular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Bebas Thin";
+  src: url(assets/fonts/bebas_neue/TTF/BebasNeueThin.ttf) format("truetype");
+}
+
+body {
+  font-family: "Bebas Regular" !important;
+  background-image: url(assets/img/wallpaper.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.font-light {
+  font-family: "Bebas Light" !important;
+}
+
+.font-bold {
+  font-family: "Bebas Bold" !important;
+}
+
+.font-thin {
+  font-family: "Bebas Thin" !important;
+}

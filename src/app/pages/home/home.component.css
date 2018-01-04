@@ -1,0 +1,101 @@
+.bg-light {
+  background-color: transparent !important;
+  /* padding: .5rem 1rem; */
+  padding: 0 !important;
+  font-family: Roboto !important;
+}
+
+.img-fluid {
+  width: 250px;
+  position: absolute;
+  margin: 1.5rem !important;
+}
+
+.tarakan-nav {
+  background-color: #FFFFFF !important;
+  padding: .5rem 3rem;
+}
+
+.tarakan-nav li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-weight: 650;
+}
+
+.tarakan-nav li .nav-link {
+  padding: 0 !important;
+  margin: .25rem .5rem !important;
+}
+
+.tarakan-nav li.active .nav-link {
+  border-bottom: 4px solid #FF4500;
+}
+
+#home {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.text {
+  color: #EEEEEE;
+}
+
+.service-info {
+  background-color: #292828 !important;
+  padding: .75rem !important;
+}
+
+.headline {
+  background-color: #FF4500 !important;
+}
+
+.first-word {
+  font-family: Roboto !important;
+  font-size: 3rem !important;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.25rem;
+}
+
+.second-word {
+  font-size: 2rem !important;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.15rem;
+}
+
+.third-word {
+  font-size: 1.2rem !important;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+}
+
+.headline h1 {
+  padding: 1rem .75rem 0 .75rem !important;
+}
+
+.headline p {
+  font-weight: 300;
+  padding: 0 .75rem 3.5rem .75rem !important;
+  font-size: .85rem !important;
+  font-family: Roboto !important;
+}
+
+.service-info p {
+  font-family: Roboto !important;
+  font-size: .8rem !important;
+  font-weight: 200;
+}
+
+.service-text {
+  padding-bottom: 2rem !important;
+}
+
+.footer {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+  letter-spacing: .1rem;
+}
