@@ -1,12 +1,13 @@
-#home {
+#about {
   position: absolute;
   bottom: 0;
   width: 100%;
-  margin-bottom: auto;
+  padding-bottom: auto;
 }
 
 .text {
   color: #EEEEEE;
+  margin-bottom: 10px;
 }
 
 .service-info {
@@ -65,4 +66,10 @@
   margin-top: 1rem !important;
   margin-bottom: 0 !important;
   letter-spacing: .1rem;
+}
+
+.demo-one img {
+  height: 200px;
+  width: 200px;
+  margin: 0 15px 0 0;
 }

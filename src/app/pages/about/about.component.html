@@ -1,0 +1,44 @@
+<div id="about">
+  <div class="container-fluid">
+    <div class="row align-items-end">
+      <div class="col-lg-8 service-info">
+
+        <div class="service-text text">
+          <div class="demo-one" dragScroll drag-scroll-y-disabled="true" drag-scroll-x-disabled="true" scrollbar-hidden="true" (reachesLeftBound)="leftBoundStat($event)"
+            (reachesRightBound)="rightBoundStat($event)" #nav>
+            <img *ngFor="let image of imagelist; let i = index;" [src]="'assets/img/' + image" (click)="clickItem(image,i)" />
+          </div>
+
+          <br>
+          <button (click)="moveLeft()">left</button>
+          <button (click)="moveRight()">right</button>
+        </div>
+        <p class="text footer">DESIGNED BY TARAKAN &copy; OFFICIAL WEBSITE 2017</p>
+      </div>
+      <div class="col-lg-4 headline">
+        <h1 class="text font-bold display-4">TEAM MEMBER PROFILE</h1>
+        <br>
+        <div class="text">
+          <span>Name</span>
+          <h3 class="font-bold">John Doe</h3>
+        </div>
+
+        <div class="text">
+          <span>Role</span>
+          <h3 class="font-bold">Front End Developer</h3>
+        </div>
+
+        <div class="text">
+          <span>Phone</span>
+          <h3 class="font-bold">(+380) 93 XXX XX XX</h3>
+        </div>
+
+        <div class="text">
+          <span>Email</span>
+          <h3 class="font-bold">JohnDoe@mydomain.com</h3>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
