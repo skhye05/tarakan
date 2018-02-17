@@ -1,10 +1,15 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DragScrollDirective } from 'ngx-drag-scroll';
+import { blockTransition } from '../../shared/animations/route.animation'
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  styleUrls: ['./about.component.css'],
+  animations: [blockTransition],
+  host: {
+    '[@blockTransition]': ''
+  }
 })
 export class AboutComponent implements OnInit {
 

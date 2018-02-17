@@ -3,6 +3,7 @@
   bottom: 0;
   width: 100%;
   margin-bottom: auto;
+  overflow: hidden;
 }
 
 .text {
@@ -65,4 +66,14 @@
   margin-top: 1rem !important;
   margin-bottom: 0 !important;
   letter-spacing: .1rem;
+}
+
+.service-text.text span {
+  cursor: pointer;
+  margin-right: .5rem;
+  transition: all .5s;
+}
+
+.service-text.text span:hover {
+  color: #FF4500;
 }
