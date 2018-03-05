@@ -17,6 +17,12 @@
 
 .headline {
   background-color: #FF4500 !important;
+  height: 55vh;
+  max-height: 60vh;
+}
+
+.headline h1 {
+  margin-bottom: 1.5rem;
 }
 
 .first-word {
@@ -68,12 +74,14 @@
   letter-spacing: .1rem;
 }
 
-.service-text.text span {
+.service-text.text span,
+.home {
   cursor: pointer;
   margin-right: .5rem;
   transition: all .5s;
 }
 
-.service-text.text span:hover {
+.service-text.text span:hover,
+.home:hover {
   color: #FF4500;
 }

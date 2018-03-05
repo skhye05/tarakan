@@ -6,7 +6,8 @@
         <div class="service-text text">
           <div class="demo-one" dragScroll drag-scroll-y-disabled="true" drag-scroll-x-disabled="true" scrollbar-hidden="true" (reachesLeftBound)="leftBoundStat($event)"
             (reachesRightBound)="rightBoundStat($event)" #nav>
-            <img *ngFor="let image of imagelist; let i = index;" [src]="'assets/img/' + image" (click)="clickItem(image,i)" />
+            <img *ngFor="let member of team; let i = index;" [src]="'assets/img/' + member.img" (click)="clickItem(member,i)" (mouseover)="onHover(i)"
+              [@imgTeam]="member.state" />
           </div>
 
           <br>
@@ -20,22 +21,22 @@
         <br>
         <div class="text">
           <span>Name</span>
-          <h3 class="font-bold">John Doe</h3>
+          <h3 class="font-bold" [@fadeToggleTeam]="state">{{memberInfo.name}}</h3>
         </div>
 
         <div class="text">
           <span>Role</span>
-          <h3 class="font-bold">Front End Developer</h3>
+          <h3 class="font-bold" [@fadeToggleTeam]="state">{{memberInfo.role}}</h3>
         </div>
 
         <div class="text">
           <span>Phone</span>
-          <h3 class="font-bold">(+380) 93 XXX XX XX</h3>
+          <h3 class="font-bold" [@fadeToggleTeam]="state">{{memberInfo.phone}}</h3>
         </div>
 
         <div class="text">
           <span>Email</span>
-          <h3 class="font-bold">JohnDoe@mydomain.com</h3>
+          <h3 class="font-bold" [@fadeToggleTeam]="state">{{memberInfo.email}}</h3>
           <br>
         </div>
       </div>

@@ -74,3 +74,9 @@
   width: 200px;
   margin: 0 15px 0 0;
 }
+
+img {
+  cursor: pointer;
+  transition: all .5s;
+}
+
